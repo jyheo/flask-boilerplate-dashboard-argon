@@ -1,0 +1,7 @@
+.bg-gradient-primary {
+    background: linear-gradient(87deg, #01b0f1 0, #0090c6 100%) !important;
+  }
+
+nav .nav-item a.nav-link {
+    color: black !important;
+}
