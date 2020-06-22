@@ -8,7 +8,7 @@
       </button>
       <!-- Brand -->
       <a class="navbar-brand pt-0" href="/">
-        <img src="/static/assets/img/brand/blue.png" class="navbar-brand-img" alt="Flask Argon Dashboard">
+        <img src="/static/assets/img/brand/hotelysis-logo-title-62.png" class="navbar-brand-img" alt="Hotelysis Dashboard">
       </a>
       <!-- User -->
       <ul class="nav align-items-center d-md-none">
@@ -37,16 +37,16 @@
             </div>
             <a href="/profile" class="dropdown-item">
               <i class="ni ni-single-02"></i>
-              <span>My profile</span>
+              <span>{{_('My profile')}}</span>
             </a>
             <a href="/profile.html" class="dropdown-item">
               <i class="ni ni-settings-gear-65"></i>
-              <span>Settings</span>
+              <span>{{_('Settings')}}</span>
             </a>
             <div class="dropdown-divider"></div>
             <a href="/logout" class="dropdown-item">
               <i class="ni ni-user-run text-red"></i>
-              <span>Logout</span>
+              <span>{{_('Logout')}}</span>
             </a>
           </div>
         </li>
@@ -58,7 +58,7 @@
           <div class="row">
             <div class="col-6 collapse-brand">
               <a href="/">
-                <img src="/static/assets/img/brand/blue.png">
+                <img src="/static/assets/img/brand/hotelysis-logo-title-62.png">
               </a>
             </div>
             <div class="col-6 collapse-close">
@@ -82,19 +82,19 @@
         </form>
         <!-- Navigation -->
         <ul class="navbar-nav">
-          <li class="nav-item">
+          <!--li class="nav-item">
             <a class="nav-link" href="/">
               <i class="ni ni-tv-2 text-primary"></i> {{ _('Dashboard') }}
             </a>
-          </li>
+          </li-->
           <li class="nav-item">
             <a class="nav-link" href="/dash/page1">
-              <i class="ni ni-tv-2 text-primary"></i> Dash App1
+              <i class="ni ni-tv-2 text-primary"></i> {{ _('Dash App1') }}
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/dash/page2">
-              <i class="ni ni-tv-2 text-primary"></i> Dash App2
+              <i class="ni ni-tv-2 text-primary"></i> {{ _('Dash App2') }}
             </a>
           </li>     
           <li class="nav-item">

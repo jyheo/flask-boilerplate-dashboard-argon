@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-06-23 02:21+0900\n"
+"POT-Creation-Date: 2020-06-23 03:15+0900\n"
 "PO-Revision-Date: 2020-06-23 02:34+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -18,11 +18,62 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
 
+#: app/base/templates/site_template/sidebar.html:40
+msgid "My profile"
+msgstr ""
+
+#: app/base/templates/site_template/sidebar.html:44
+msgid "Settings"
+msgstr ""
+
+#: app/base/templates/site_template/sidebar.html:49
+msgid "Logout"
+msgstr ""
+
 #: app/base/templates/site_template/sidebar.html:87
 msgid "Dashboard"
 msgstr ""
 
-#: dashapp/app1.py:15
+#: app/base/templates/site_template/sidebar.html:92
+msgid "Dash App1"
+msgstr ""
+
+#: app/base/templates/site_template/sidebar.html:97
+msgid "Dash App2"
+msgstr ""
+
+#: app/base/templates/site_template/top-stats.html:13
+msgid "Traffic"
+msgstr ""
+
+#: app/home/templates/index.html:22
+msgid "Overview"
+msgstr ""
+
+#: dashapp/app1.py:11
 msgid "My Dash app"
+msgstr ""
+
+#: dashapp/app2.py:17
+msgid "Hello Dash"
+msgstr ""
+
+#: dashapp/app2.py:19
+msgid ""
+"\n"
+"            Dash: A web application framework for Python.\n"
+"        "
+msgstr ""
+
+#: dashapp/app2.py:27
+msgid "SF"
+msgstr ""
+
+#: dashapp/app2.py:28
+msgid "Montréal"
+msgstr ""
+
+#: dashapp/app2.py:31
+msgid "Dash Data Visualization"
 msgstr ""
 

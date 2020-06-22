@@ -196,9 +196,9 @@ A dashboard is a set of pages that are easy to read and offer information to the
     2. $ pybabel init -i messages.pot -d app/translations -l en
     3. $ pybabel init -i messages.pot -d app/translations -l ko
     4. Open app/translations/*/messages.po and Translate strings.
-    5. $ pybabel compile -d translations
+    5. $ pybabel compile -d app/translations
     6. If you change strings in html/py
         - $ pybabel extract -F babel.cfg -o messages.pot .
         - $ pybabel update -i messages.pot -d app/translations
         - Open app/translations/*/messages.po and Translate strings.
-        - $ pybabel compile -d translations
+        - $ pybabel compile -d app/translations
