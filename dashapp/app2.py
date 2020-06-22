@@ -3,7 +3,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 
 
-def register_dash(server):
+def register_dash(server, _):
     external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
     app = dash.Dash(

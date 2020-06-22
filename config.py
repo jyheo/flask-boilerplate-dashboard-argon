@@ -28,6 +28,9 @@ class Config(object):
     # DEFAULT_THEME = "themes/dark"
     DEFAULT_THEME = None
 
+    # flask-babel defaul locale.
+    BABEL_DEFAULT_LOCALE = 'ko'
+
 
 class ProductionConfig(Config):
     DEBUG = False

@@ -10,7 +10,9 @@ from flask_sqlalchemy import SQLAlchemy
 from importlib import import_module
 from logging import basicConfig, DEBUG, getLogger, StreamHandler
 from os import path
+from flask_babel import Babel
 import dashapp
+
 
 db = SQLAlchemy()
 login_manager = LoginManager()
@@ -82,5 +84,6 @@ def create_app(config, selenium=False):
     configure_database(app)
     configure_logs(app)
     apply_themes(app)
-    dashapp.register_dashapps(app)
+    dashapp.register_dashapps(app, config.BABEL_DEFAULT_LOCALE)
+    Babel(app) # use flask-babel
     return app

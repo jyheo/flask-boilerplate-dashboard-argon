@@ -173,3 +173,32 @@ A dashboard is a set of pages that are easy to read and offer information to the
 
 ---
 **[Flask Dashboard Argon](https://appseed.us/admin-dashboards/flask-boilerplate-dashboard-argon)** - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).
+
+
+# Adding Dash
+* dashapp/*.py - Dash app itself
+    - app1.py : Example1
+    - app2.py : Example2
+* app/dash/* - HTML(with Flask) for loading Dash app using iframe
+* call dashapp.register_dashapps(app) in app/__init__.py/create_app() 
+
+
+# Internationalization
+* Flask-babel in pure Flask app (in app folder)
+    - Babel(app) in app/__init__.py/create_app()
+    - babel.cfg
+    - BABEL_DEFAULT_LOCALE = 'ko' in config.py
+* gettext in Dash app (in dashapp folder)
+    - t = gettext.translation('messages', 'app/translations', languages=[lang]) in dashapp/__init__
+* Both use same gettext's mo files
+* How to make app/translations/*.mo
+    1. $ pybabel extract -F babel.cfg -o messages.pot .
+    2. $ pybabel init -i messages.pot -d app/translations -l en
+    3. $ pybabel init -i messages.pot -d app/translations -l ko
+    4. Open app/translations/*/messages.po and Translate strings.
+    5. $ pybabel compile -d translations
+    6. If you change strings in html/py
+        - $ pybabel extract -F babel.cfg -o messages.pot .
+        - $ pybabel update -i messages.pot -d app/translations
+        - Open app/translations/*/messages.po and Translate strings.
+        - $ pybabel compile -d translations
